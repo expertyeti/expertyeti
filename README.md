@@ -33,4 +33,5 @@
 
 **Abierto a oportunidades profesionales y retos técnicos de alto nivel.**
 
-del.alc.jav@gmail.com
+[Correo Electrónico](mailto:del.alc.jav@gmail.com)  
+[YouTube](https://www.youtube.com/@ImBritex)
