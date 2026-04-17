@@ -1,5 +1,4 @@
-# Javier Delgado Alcántara
-### a.k.a Britex
+# Britex
 
 **Arquitecto de Software • Desarrollador Multiplataforma • Creador de Soluciones**
 
