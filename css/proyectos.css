@@ -1,0 +1,122 @@
+.steam-container {
+    padding: 16px;
+    background-color: transparent;
+    animation: steamFadeIn 0.3s ease-in-out;
+}
+
+@keyframes steamFadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.steam-banner {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    /* Ajuste de borde imperceptible para control de desbordamiento */
+    border: 1px solid rgba(255, 255, 255, 0.01); 
+    background-clip: padding-box;
+}
+
+/* CORRECCIÓN DE LA SOMBRA: Transición perfecta del degradado al color de fondo */
+.steam-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(11, 12, 13, 0) 0%, rgba(11, 12, 13, 0.4) 50%, rgba(11, 12, 13, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+}
+
+.steam-tag {
+    font-size: 9px;
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #949ba4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    width: fit-content;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.steam-banner h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.steam-body {
+    margin-top: 12px;
+}
+
+.steam-play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 11px;
+    background: linear-gradient(to right, #75b022, #588a1b);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 6px;
+    transition: filter 0.2s;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+}
+
+.steam-play-btn:hover {
+    filter: brightness(1.1);
+}
+
+.repo-mini-stats {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    background-color: #010102;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.stat-item {
+    font-size: 13px;
+    color: #949ba4;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.icon-star { color: #f1c40f; }
+.icon-fork { color: #3498db; }
+.icon-issue { color: #e74c3c; }
+
+.steam-main-info {
+    background-color: #010102;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.steam-main-info h3 {
+    margin: 0 0 6px 0;
+    font-size: 11px;
+    color: #949ba4;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.steam-main-info p {
+    margin: 0;
+    font-size: 13px;
+    color: #dbdee1;
+    line-height: 1.5;
+}

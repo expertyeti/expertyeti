@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Britex - Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" id="category-style" href="">
+</head>
+<body>
+
+    <div class="profile-container" id="profile-container">
+        
+        <div class="categories-panel">
+            <div class="panel-header">
+                <span>Categorías</span>
+            </div>
+            <div class="panel-content">
+                <div class="category-item active" data-target="home"><i class="fa-solid fa-house"></i> Inicio</div>
+                <div class="category-item" data-target="proyectos"><i class="fa-solid fa-folder"></i> Proyectos</div>
+                <div class="category-item" data-target="videos"><i class="fa-solid fa-video"></i> Videos recientes</div>
+                <div class="category-item" data-target="juegos"><i class="fa-solid fa-gamepad"></i> Mis Juegos</div>
+                <div class="category-item" data-target="setup"><i class="fa-solid fa-desktop"></i> Mi Setup</div>
+            </div>
+        </div>
+
+        <div class="discord-card" id="discord-card">
+            <div class="banner">
+                <button class="banner-btn btn-left" id="menu-toggle" title="Mostrar Categorías">
+                    <i class="fa-solid fa-chevron-left" id="toggle-icon"></i>
+                </button>
+                
+                <a href="https://discord.com/users/1201423206708412420" target="_blank" class="banner-btn btn-right" title="Enviar Solicitud de Amistad">
+                    <i class="fa-solid fa-user-plus"></i>
+                </a>
+            </div>
+            
+            <div class="profile-header">
+                <div class="pfp-container">
+                    <img src="assets/pfp.webp" alt="Foto de perfil" class="pfp" id="pfp-image">
+                    <div class="status-indicator" id="status-indicator"></div>
+                </div>
+                <span class="nav-username" id="nav-username">Britex</span>
+            </div>
+
+            <div id="card-content"></div>
+        </div>
+
+    </div>
+
+    <script src="./router.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
